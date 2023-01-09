@@ -11,7 +11,7 @@
 
     fseek($fh,0,SEEK_END);
     echo ftell($fh);
-    fwrite($fh, $name.",".$email.",".$phone."\n");
+    fwrite($fh, "\"".$name."\"".",".$email.",".$phone."\n");
     
 
 ?>
